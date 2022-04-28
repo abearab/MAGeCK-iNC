@@ -1,0 +1,111 @@
+INFO  @ Tue, 22 Jan 2019 15:31:13: Parameters: /Users/Ruilin/miniconda2/bin/mageck test -k /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/iPSC_t10_vs_t0.txt -t t0 -c iPSC_t10_1,iPSC_t10_2 -n /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0 --pdf-report 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Welcome to MAGeCK v0.5.7. Command: test 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Loading count table from /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/iPSC_t10_vs_t0.txt  
+INFO  @ Tue, 22 Jan 2019 15:31:13: Processing 1 lines.. 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Parsing error in line 1 (usually the header line). Skip this line. 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Loaded 13013 records. 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Loading R template file: /Users/Ruilin/miniconda2/lib/python2.7/site-packages/mageck/plot_template.RTemplate. 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Loading R template file: /Users/Ruilin/miniconda2/lib/python2.7/site-packages/mageck/plot_template_indvgene.RTemplate. 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Loading Rnw template file: /Users/Ruilin/miniconda2/lib/python2.7/site-packages/mageck/plot_template.Rnw. 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Setting up the visualization module... 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Given sample labels: t0 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Converted index: 0 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Treatment samples:t0 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Treatment sample index:0 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Given sample labels: iPSC_t10_1,iPSC_t10_2 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Converted index: 1 2 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Control samples:iPSC_t10_1,iPSC_t10_2 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Control sample index:1,2 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Initial (total) size factor: 0.822539432998 0.804240206498 1.84896470326 
+DEBUG @ Tue, 22 Jan 2019 15:31:13: Median factor: 0.769290974935 0.75058594599 1.74407552946 
+INFO  @ Tue, 22 Jan 2019 15:31:13: Final size factor: 0.769290974935 0.75058594599 1.74407552946 
+DEBUG @ Tue, 22 Jan 2019 15:31:14: Adjusted model: 1.0485294584	3.04036736263 
+INFO  @ Tue, 22 Jan 2019 15:31:14: Raw variance calculation: 1.0 for control, 0.0 for treatment 
+INFO  @ Tue, 22 Jan 2019 15:31:14: Adjusted variance calculation: 0.166666666667 for raw variance, 0.833333333333 for modeling 
+INFO  @ Tue, 22 Jan 2019 15:31:14: Use qnorm to reversely calculate sgRNA scores ... 
+DEBUG @ Tue, 22 Jan 2019 15:31:14: lower test FDR cutoff: 0.400522554369 
+DEBUG @ Tue, 22 Jan 2019 15:31:14: higher test FDR cutoff: 0.384845923307 
+INFO  @ Tue, 22 Jan 2019 15:31:14: Running command: RRA -i /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.plow.txt -o /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.low.txt -p 0.400522554369 --skip-gene NA --skip-gene na  
+INFO  @ Tue, 22 Jan 2019 15:31:15: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Welcome to RRA v 0.5.7. 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Skipping gene NA for permutation ... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Skipping gene na for permutation ... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Reading input file... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Summary: 13013 sgRNAs, 2832 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Computing lo-values for each group... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Computing false discovery rate... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 1 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 4 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 5 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Number of genes under FDR adjustment: 2832 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Saving to output file... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   RRA completed. 
+INFO  @ Tue, 22 Jan 2019 15:31:15:    
+INFO  @ Tue, 22 Jan 2019 15:31:15: End command message. 
+INFO  @ Tue, 22 Jan 2019 15:31:15: Running command: RRA -i /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.phigh.txt -o /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.high.txt -p 0.384845923307 --skip-gene NA --skip-gene na  
+INFO  @ Tue, 22 Jan 2019 15:31:15: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Welcome to RRA v 0.5.7. 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Skipping gene NA for permutation ... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Skipping gene na for permutation ... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Reading input file... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Summary: 13013 sgRNAs, 2832 genes, 1 lists; skipped sgRNAs:0 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Computing lo-values for each group... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Computing false discovery rate... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 1 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 4 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Permuting genes with 5 sgRNAs... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Number of genes under FDR adjustment: 2832 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   Saving to output file... 
+INFO  @ Tue, 22 Jan 2019 15:31:15:   RRA completed. 
+INFO  @ Tue, 22 Jan 2019 15:31:15:    
+INFO  @ Tue, 22 Jan 2019 15:31:15: End command message. 
+DEBUG @ Tue, 22 Jan 2019 15:31:16: Sorting the merged items by negative selection... 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Loading top 10 genes from /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.low.txt: PTEN,TAOK1,IBTK_P1,CDK10,LATS2,GSK3A,CHEK2,GSK3B,CLK3_P2,TGFBR2 
+DEBUG @ Tue, 22 Jan 2019 15:31:16: Column index:3 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Loading top 10 genes from /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.high.txt: UQCRB,PGK1,GAPDH_P1,WARS2,LSS,HSD17B10,SEPSECS,PARS2,SSB,ATP6V1C1 
+DEBUG @ Tue, 22 Jan 2019 15:31:16: Column index:9 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Running command: rm /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.plow.txt 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Running command: rm /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.phigh.txt 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Running command: rm /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.low.txt 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Running command: rm /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output/t10_vs_t0.gene.high.txt 
+INFO  @ Tue, 22 Jan 2019 15:31:16: Running command: cd /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output; Rscript t10_vs_t0.R 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   null device  
+INFO  @ Tue, 22 Jan 2019 15:31:18:             1  
+INFO  @ Tue, 22 Jan 2019 15:31:18:   Writing to file t10_vs_t0_summary.tex 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   Processing code chunks with options ... 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    1 : keep.source term verbatim (label = funcdef, t10_vs_t0_summary.Rnw:27) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    2 : keep.source term tex (label = tab1, t10_vs_t0_summary.Rnw:37) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    3 : keep.source term verbatim (t10_vs_t0_summary.Rnw:77) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    4 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:83) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    5 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:201) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    6 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:345) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    7 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:489) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    8 : keep.source term verbatim (t10_vs_t0_summary.Rnw:567) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    9 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:573) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   10 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:691) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   11 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:835) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   12 : keep.source term verbatim pdf  (t10_vs_t0_summary.Rnw:979) 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18:   You can now run (pdf)latex on ‘t10_vs_t0_summary.tex’ 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   Error in texi2dvi("t10_vs_t0_summary.tex", pdf = TRUE) :  
+INFO  @ Tue, 22 Jan 2019 15:31:18:     Running 'texi2dvi' on 't10_vs_t0_summary.tex' failed. 
+INFO  @ Tue, 22 Jan 2019 15:31:18:   Execution halted 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18: End command message. 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Running command: cd /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output; rm -rf t10_vs_t0_summary-*.pdf 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18: End command message. 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Running command: cd /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output; rm -rf t10_vs_t0_summary.aux 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18: End command message. 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Running command: cd /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output; rm -rf t10_vs_t0_summary.tex 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18: End command message. 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Running command: cd /Users/Ruilin/Desktop/Method_paper/Supplement_files/MAGeCK-iNC_example/output; rm -rf t10_vs_t0_summary.toc 
+INFO  @ Tue, 22 Jan 2019 15:31:18: Command message: 
+INFO  @ Tue, 22 Jan 2019 15:31:18:    
+INFO  @ Tue, 22 Jan 2019 15:31:18: End command message. 
